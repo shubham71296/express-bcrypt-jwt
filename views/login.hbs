@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+</head>
+<body>
+  {{#if msg}}
+   {{msg}}
+  {{/if}}
+	
+ <form action="login" method="post" style="margin-left:500px;margin-top:150px">
+  	   
+       email:<input type="email" name="email" placeholder="enter email"><br><br>
+
+       Password:<input type="text" name="password" placeholder="enter password"><br><br>
+  	
+  	   <input style="background-color: green;color: yellow" type="submit" value="submit">
+  	
+  </form>
+    <a href="/createacc">signup</a>
+</body>
+</html>

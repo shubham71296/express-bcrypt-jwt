@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+  <h1>hello welcome {{user}}</h1>
+  <p>this is userdetail page for dummy data</p>
+  <table>
+  	<tr>
+  		<td>id</td>
+  		<td>name</td>
+  		<td>email</td>
+  	</tr>
+  	{{#each data}}
+  	  <tr>
+  		<td>{{this.id}}</td>
+  		<td>{{this.name}}</td>
+  		<td>{{this.email}}</td>
+  	</tr>
+  	{{/each}}
+  </table>
+  <a href="/logout">logout</a>
+</body>
+</html>
